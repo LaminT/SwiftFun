@@ -4,7 +4,7 @@
 //
 //  Created by Lamin Tamba on 07/05/2018.
 //  Copyright © 2018 Lamin Tamba. All rights reserved.
-//
+// Hello I like coding
 
 import UIKit
 
