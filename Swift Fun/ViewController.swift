@@ -11,12 +11,21 @@ import UIKit
 class ViewController: UIViewController {
 
     var buttonCount = 0
+    
     @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var topTextField: UITextField!
+    @IBOutlet weak var bottomTextField: UITextField!
     
     
     
     @IBAction func buttonTapped(_ sender: Any) {
         
+        let sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
+        
+        myLabel.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(sum)"
+        
+        
+    /*
         buttonCount = buttonCount + 1
         
         print(buttonCount)
@@ -36,7 +45,8 @@ class ViewController: UIViewController {
             myLabel.text = "You hit it more than 10 times!"
             
         }
-        
+ 
+ */
         
     }
     
