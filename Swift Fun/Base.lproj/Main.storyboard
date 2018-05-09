@@ -50,11 +50,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="In7-Yj-FRL">
+                                <rect key="frame" x="163" y="196" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5p0-EF-AUR" firstAttribute="top" secondItem="xpu-IK-Wti" secondAttribute="bottom" constant="20" id="3vm-Fm-RNp"/>
                             <constraint firstItem="I20-3x-K2s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8NU-PX-1pG"/>
+                            <constraint firstItem="xpu-IK-Wti" firstAttribute="top" secondItem="In7-Yj-FRL" secondAttribute="bottom" constant="8" id="EkT-iS-yYR"/>
+                            <constraint firstItem="In7-Yj-FRL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O80-8g-W9G"/>
                             <constraint firstItem="5p0-EF-AUR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b9U-vd-IrL"/>
                             <constraint firstItem="xpu-IK-Wti" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dwa-pa-BfO"/>
                             <constraint firstItem="gDt-rs-UZI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nH4-hJ-nka"/>
@@ -65,6 +70,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="additionSwitch" destination="In7-Yj-FRL" id="RVu-59-smj"/>
                         <outlet property="bottomTextField" destination="5p0-EF-AUR" id="ZtC-fq-wrC"/>
                         <outlet property="myLabel" destination="gDt-rs-UZI" id="asb-io-55k"/>
                         <outlet property="topTextField" destination="xpu-IK-Wti" id="vGs-xs-O5v"/>
